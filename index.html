@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>خطوتك ربح - حمّل التطبيق</title>
+<meta name="description" content="امشِ واربح! عدّاد خطوات حقيقي يعمل والجوال في جيبك">
+<meta property="og:title" content="خطوتك ربح 🚶‍♂️ امشِ واربح">
+<meta property="og:description" content="حمّل التطبيق مجاناً - عدّاد خطوات حقيقي يعمل والجوال في جيبك">
+<style>
+:root{--bg:#0a120f;--card:#121d18;--line:#1f2e27;--green:#10b981;--green2:#059669;--gold:#fbbf24;--text:#ecfdf5;--muted:#8fa89b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+.wrap{max-width:460px;margin:0 auto;padding:28px 18px 40px}
+.hero{text-align:center}
+.logo{width:96px;height:96px;border-radius:26px;background:linear-gradient(145deg,var(--green),var(--green2));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 10px 40px rgba(16,185,129,.35);font-size:50px}
+h1{font-size:32px;font-weight:800}
+.tag{color:var(--muted);margin-top:4px;font-size:16px}
+.feats{display:flex;justify-content:center;gap:8px;margin:18px 0 24px;flex-wrap:wrap}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:20px;border:0;border-radius:18px;background:linear-gradient(145deg,var(--green),var(--green2));color:#fff;font-size:22px;font-weight:800;text-decoration:none;box-shadow:0 8px 30px rgba(16,185,129,.4);animation:pulse 2s infinite}
+.btn:active{transform:scale(.97)}
+@keyframes pulse{0%,100%{box-shadow:0 8px 30px rgba(16,185,129,.4)}50%{box-shadow:0 8px 45px rgba(16,185,129,.7)}}
+.size{text-align:center;color:var(--muted);font-size:13px;margin-top:8px}
+.steps{margin-top:30px}
+.steps h2{font-size:20px;margin-bottom:14px;text-align:center}
+.step{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px;transition:.3s}
+.num{flex:none;width:36px;height:36px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+.step b{display:block;font-size:16px}
+.step span{color:var(--muted);font-size:14px}
+.hl{border-color:var(--green);background:#0f2a20}
+.done{display:none;background:#0f2a20;border:2px solid var(--green);border-radius:16px;padding:16px;text-align:center;margin-top:16px}
+.done.show{display:block}
+.done b{font-size:18px;color:var(--green)}
+.note{margin-top:22px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);border-radius:16px;padding:14px;font-size:14px}
+.note b{color:var(--gold)}
+.warn{display:none;background:#2a1414;border:1px solid #7f1d1d;border-radius:14px;padding:12px;text-align:center;margin-bottom:16px;font-size:14px}
+.warn.show{display:block}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="warn" id="warn">⚠️ هذا التطبيق يعمل على جوالات <b>أندرويد</b> فقط</div>
+
+  <div class="hero">
+    <div class="logo">👣</div>
+    <h1>خطوتك ربح</h1>
+    <p class="tag">امشِ واربح نقاط 🚶‍♂️ والجوال في جيبك</p>
+    <div class="feats">
+      <span class="feat">👣 عدّاد حقيقي</span>
+      <span class="feat">🏅 شارات</span>
+      <span class="feat">📊 إحصائيات</span>
+      <span class="feat">🪙 نقاط</span>
+    </div>
+  </div>
+
+  <a class="btn" id="dl" href="https://github.com/majedalejil-bit/khotwatak-rebh-download/releases/latest/download/khotwatak-v2.1.apk">
+    ⬇️ حمّل التطبيق مجاناً
+  </a>
+  <p class="size">أندرويد • 3 ميغابايت • مجاني</p>
+
+  <div class="done" id="done">
+    <b>✅ بدأ التحميل!</b>
+    <p>انتظر ثوانٍ ثم اتبع الخطوات بالأسفل 👇</p>
+  </div>
+
+  <div class="steps">
+    <h2>التثبيت في 3 خطوات سهلة</h2>
+    <div class="step" id="s1">
+      <div class="num">1</div>
+      <div><b>اضغط زر التحميل الأخضر</b><span>انتظر حتى يكتمل التحميل (ثوانٍ قليلة)</span></div>
+    </div>
+    <div class="step" id="s2">
+      <div class="num">2</div>
+      <div><b>اضغط على إشعار التحميل</b><span>اسحب شريط الإشعارات من أعلى الشاشة واضغط على «khotwatak»، أو افتحه من مجلد التنزيلات</span></div>
+    </div>
+    <div class="step" id="s3">
+      <div class="num">3</div>
+      <div><b>اضغط «تثبيت» ✅</b><span>إذا ظهرت رسالة «غير مسموح» ← اضغط <b>الإعدادات</b> ← فعّل <b>السماح من هذا المصدر</b> ← ارجع واضغط تثبيت</span></div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>🔒 هل التطبيق آمن؟</b><br>
+    نعم. رسالة «مصدر غير معروف» تظهر لأي تطبيق ليس من متجر Google Play، وهي طبيعية تماماً وتظهر مرة واحدة فقط.
+  </div>
+
+  <footer>خطوتك ربح v1.0 • تطوير ماجد ابوسيدرا</footer>
+</div>
+
+<script>
+if(!/android/i.test(navigator.userAgent)) document.getElementById('warn').classList.add('show');
+document.getElementById('dl').addEventListener('click',function(){
+  document.getElementById('done').classList.add('show');
+  document.getElementById('s1').classList.remove('hl');
+  document.getElementById('s2').classList.add('hl');
+  document.getElementById('s3').classList.add('hl');
+  setTimeout(function(){document.getElementById('done').scrollIntoView({behavior:'smooth',block:'start'})},300);
+});
+document.getElementById('s1').classList.add('hl');
+</script>
+</body>
+</html>
